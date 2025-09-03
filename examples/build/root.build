@@ -1,0 +1,12 @@
+cxx.std = latest
+
+using cxx
+
+hxx{*}: extension = hxx
+ixx{*}: extension = ixx
+txx{*}: extension = txx
+cxx{*}: extension = cxx
+
+# No exe{} in this subproject is a test.
+#
+exe{*}: test = false

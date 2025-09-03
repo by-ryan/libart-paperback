@@ -1,0 +1,6 @@
+$out_root/
+{
+  include art/paperback/
+}
+
+export $out_root/art/paperback/$import.target

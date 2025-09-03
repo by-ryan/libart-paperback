@@ -1,0 +1,37 @@
+#ifndef libart__paperback__version_hxx_
+#define libart__paperback__version_hxx_
+
+// The numeric version format is AAAAABBBBBCCCCCDDDE where:
+//
+// AAAAA - major version number
+// BBBBB - minor version number
+// CCCCC - bugfix version number
+// DDD   - alpha / beta (DDD + 500) version number
+// E     - final (0) / snapshot (1)
+//
+// When DDDE is not 0, 1 is subtracted from AAAAABBBBBCCCCC. For example:
+//
+// Version      AAAAABBBBBCCCCCDDDE
+//
+// 0.1.0        0000000001000000000
+// 0.1.2        0000000001000020000
+// 1.2.3        0000100002000030000
+// 2.2.0-a.1    0000200001999990010
+// 3.0.0-b.2    0000299999999995020
+// 2.2.0-a.1.z  0000200001999990011
+//
+#define LIBART_PAPERBACK_VERSION       $libart_paperback.version.project_number$ULL
+#define LIBART_PAPERBACK_VERSION_STR   "$libart_paperback.version.project$"
+#define LIBART_PAPERBACK_VERSION_ID    "$libart_paperback.version.project_id$"
+#define LIBART_PAPERBACK_VERSION_FULL  "$libart_paperback.version$"
+
+#define LIBART_PAPERBACK_VERSION_MAJOR $libart_paperback.version.major$
+#define LIBART_PAPERBACK_VERSION_MINOR $libart_paperback.version.minor$
+#define LIBART_PAPERBACK_VERSION_PATCH $libart_paperback.version.patch$
+
+#define LIBART_PAPERBACK_PRE_RELEASE   $libart_paperback.version.pre_release$
+
+#define LIBART_PAPERBACK_SNAPSHOT_SN   $libart_paperback.version.snapshot_sn$ULL
+#define LIBART_PAPERBACK_SNAPSHOT_ID   "$libart_paperback.version.snapshot_id$"
+
+#endif

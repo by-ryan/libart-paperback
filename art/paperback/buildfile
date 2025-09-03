@@ -1,0 +1,63 @@
+intf_libs = # Interface dependencies.
+impl_libs = # Implementation dependencies.
+
+import impl_libs =+ libart-unicode%lib{art-unicode}
+
+./: lib{art-paperback}: libul{art-paperback}
+
+libul{art-paperback}: {hxx ixx txx cxx}{** -**.test... -version} \
+                      {hxx            }{                version}
+
+libul{art-paperback}: $impl_libs $intf_libs
+
+test_libs =
+import test_libs =+ libart-validation%lib{art-validation}
+
+# Unit tests.
+#
+exe{*.test}:
+{
+  test = true
+  install = false
+}
+
+for t: cxx{**.test...}
+{
+  d = $directory($t)
+  n = $name($t)...
+
+  ./: $d/exe{$n}: $t $d/{hxx ixx txx}{+$n} $test_libs $d/testscript{+$n}
+  $d/exe{$n}: libul{art-paperback}: bin.whole = false
+}
+
+hxx{version}: in{version} $src_root/manifest
+
+# Build options.
+#
+cxx.poptions =+ "-I$out_root" "-I$src_root"
+
+# Export options.
+#
+lib{art-paperback}:
+{
+  cxx.export.poptions = "-I$out_root" "-I$src_root"
+  cxx.export.libs = $intf_libs
+}
+
+# For pre-releases use the complete version to make sure they cannot
+# be used in place of another pre-release or the final version. See
+# the version module for details on the version.* variable values.
+#
+if $version.pre_release
+  lib{art-paperback}: bin.lib.version = "-$version.project_id"
+else
+  lib{art-paperback}: bin.lib.version = "-$version.major.$version.minor"
+
+# Install into the art/paperback/ subdirectory of, say, /usr/include/
+# recreating subdirectories.
+#
+{hxx ixx txx}{*}:
+{
+  install         = include/art/paperback/
+  install.subdirs = true
+}

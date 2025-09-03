@@ -1,0 +1,3 @@
+import libs = libart-paperback%lib{art-paperback}
+
+exe{example}: {hxx ixx txx cxx}{**} $libs
