@@ -50,6 +50,9 @@ private class members.
 Developer documentation will be written to the same directory as the
 public documentation, i.e. `$out_root$/docs`.
 
+Developer documentation is built nightly from `master` and can be found
+at: https://docs.helloryan.se/libart-paperback/.
+
 ## GitHub Pull Requests
 
 Pull requests on GitHub will definitely be ignored.
