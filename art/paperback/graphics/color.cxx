@@ -3,33 +3,33 @@
 namespace Art::Paperback::Graphics
 {
 
-  RGB::
-  RGB()
+  Color_RGB::
+  Color_RGB()
   {}
 
   /// \param red The red component.
   /// \param green The green component.
   /// \param blue The blue component.
-  RGB::
-  RGB(double red, double green, double blue)
+  Color_RGB::
+  Color_RGB(double red, double green, double blue)
     : _red{red},
       _green{green},
       _blue{blue}
   {}
 
-  /// \param other The RGB to copy from.
+  /// \param other The Color_RGB to copy from.
   ///
-  RGB::
-  RGB(RGB const& other)
+  Color_RGB::
+  Color_RGB(Color_RGB const& other)
     : _red{other._red},
       _green{other._green},
       _blue{other._blue}
   {}
 
-  /// \param other The RGB to move from.
+  /// \param other The Color_RGB to move from.
   ///
-  RGB::
-  RGB(RGB&& other)
+  Color_RGB::
+  Color_RGB(Color_RGB&& other)
     : _red{other._red},
       _green{other._green},
       _blue{other._blue}
@@ -38,7 +38,7 @@ namespace Art::Paperback::Graphics
   /// \return Returns the red component.
   ///
   double
-  RGB::
+  Color_RGB::
   red() const
   {
     return _red;
@@ -47,7 +47,7 @@ namespace Art::Paperback::Graphics
   /// \return Returns the green component.
   ///
   double
-  RGB::
+  Color_RGB::
   green() const
   {
     return _green;
@@ -56,17 +56,17 @@ namespace Art::Paperback::Graphics
   /// \return Returns the blue component.
   ///
   double
-  RGB::
+  Color_RGB::
   blue() const
   {
     return _blue;
   }
 
-  /// \param other The RGB to copy from.
+  /// \param other The Color_RGB to copy from.
   ///
-  RGB&
-  RGB::
-  operator=(RGB const& other)
+  Color_RGB&
+  Color_RGB::
+  operator=(Color_RGB const& other)
   {
     _red = other._red;
     _green = other._green;
@@ -75,11 +75,11 @@ namespace Art::Paperback::Graphics
     return *this;
   }
 
-  /// \param other The RGB to move from.
+  /// \param other The Color_RGB to move from.
   ///
-  RGB&
-  RGB::
-  operator=(RGB&& other)
+  Color_RGB&
+  Color_RGB::
+  operator=(Color_RGB&& other)
   {
     _red = other._red;
     _green = other._green;

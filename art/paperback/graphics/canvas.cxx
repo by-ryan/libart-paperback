@@ -192,7 +192,7 @@ namespace Art::Paperback::Graphics
   ///
   void
   Canvas::
-  set_stroke(RGB const& color)
+  set_stroke(Color_RGB const& color)
   {
     internal->write(color.red());
     internal->write(' ');
@@ -210,7 +210,7 @@ namespace Art::Paperback::Graphics
   ///
   void
   Canvas::
-  set_fill(RGB const& color)
+  set_fill(Color_RGB const& color)
   {
     internal->write(color.red());
     internal->write(' ');

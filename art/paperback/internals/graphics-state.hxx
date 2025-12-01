@@ -59,8 +59,8 @@ namespace Art::Paperback::Internals
     Graphics::Color_space cs_stroke{Graphics::Color_space::device_grey};
     Graphics::Color_space cs_fill{Graphics::Color_space::device_grey};
 
-    Graphics::RGB rgb_stroke;
-    Graphics::RGB rgb_fill;
+    Graphics::Color_RGB rgb_stroke;
+    Graphics::Color_RGB rgb_fill;
 
     double grey_stroke{};
     double grey_fill{};

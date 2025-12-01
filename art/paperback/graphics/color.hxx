@@ -22,24 +22,24 @@ namespace Art::Paperback::Graphics
 
   /// Represents an RGB color value.
   ///
-  class RGB
+  class Color_RGB
   {
   public:
     /// Constructor.
     ///
-    RGB();
+    Color_RGB();
 
     /// Constructor.
     ///
-    RGB(RGB const&);
+    Color_RGB(Color_RGB const&);
 
     /// Constructor.
     ///
-    RGB(RGB&&);
+    Color_RGB(Color_RGB&&);
 
     /// Constructor.
     ///
-    RGB(double, double, double);
+    Color_RGB(double, double, double);
 
     /// Access red component.
     ///
@@ -58,13 +58,13 @@ namespace Art::Paperback::Graphics
 
     /// Assignment.
     ///
-    RGB&
-    operator=(RGB const&);
+    Color_RGB&
+    operator=(Color_RGB const&);
 
     /// Assignment.
     ///
-    RGB&
-    operator=(RGB&&);
+    Color_RGB&
+    operator=(Color_RGB&&);
 
   private:
     double _red{};

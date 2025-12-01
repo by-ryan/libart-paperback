@@ -64,12 +64,12 @@ namespace Art::Paperback::Graphics
     /// Set stroke RGB color.
     ///
     void
-    set_stroke(RGB const&);
+    set_stroke(Color_RGB const&);
 
     /// Set fill RGB color.
     ///
     void
-    set_fill(RGB const&);
+    set_fill(Color_RGB const&);
 
     class Path;
     friend Path;
