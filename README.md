@@ -64,8 +64,8 @@ Pull requests on GitHub will definitely be ignored.
 [build-badge]: https://code.helloryan.se/art/libart-paperback/actions/workflows/on-push.yaml/badge.svg
 [docs-badge]: https://code.helloryan.se/art/libart-paperback/actions/workflows/publish-docs-nightly.yaml/badge.svg
 [license-badge]: https://img.shields.io/badge/License-BSD_4--Clause-orange
-[sponsor-badge]: https://img.shields.io/badge/Sponsor-Patreon-green
-[language-badge]: https://img.shields.io/badge/Language-C++-blue
+[sponsor-badge]: https://img.shields.io/badge/Sponsor-Patreon-green?logo=patreon&logoColor=white
+[language-badge]: https://img.shields.io/badge/Language-C++-blue?logo=cplusplus&logoColor=white
 [build2-badge]: https://img.shields.io/badge/Powered_by-build2-red
 [made-with-love-badge]: https://img.shields.io/badge/Made_with_%E2%9D%A4%EF%B8%8F_by-RYAN-red
-[discord-badge]: https://img.shields.io/discord/1444936129718522024?label=Discord&color=blue
+[discord-badge]: https://img.shields.io/discord/1444936129718522024?logo=discord&logoColor=white&label=Discord&color=blue
