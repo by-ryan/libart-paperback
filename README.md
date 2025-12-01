@@ -1,6 +1,10 @@
 \page readme README
 
 [![Build Status][build-badge]](https://code.helloryan.se/art/libart-paperback/actions)
+[![License][license-badge]](https://code.helloryan.se/art/libart-paperback/src/branch/master/LICENSE)
+[![Sponsor][sponsor-badge]](https://patreon.com/helloryan)
+[![Language][language-badge]](https://en.wikipedia.org/wiki/C++)
+[![Build System][build2-badge]](https://build2.org/)
 
 # libart-paperback
 
@@ -51,3 +55,7 @@ public documentation, i.e. `$out_root$/docs`.
 Pull requests on GitHub will definitely be ignored.
 
 [build-badge]: https://code.helloryan.se/art/libart-paperback/actions/workflows/on-push.yaml/badge.svg
+[license-badge]: https://img.shields.io/badge/License-BSD_4--Clause-orange
+[sponsor-badge]: https://img.shields.io/badge/Sponsor-Patreon-green
+[language-badge]: https://img.shields.io/badge/Language-C++-blue
+[build2-badge]: https://img.shields.io/badge/Powered_by-build2-red
