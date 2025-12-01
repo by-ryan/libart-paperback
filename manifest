@@ -1,6 +1,6 @@
 : 1
 name: libart-paperback
-version: 0.1.0-a.0.z
+version: 0.1.0-a.0
 language: c++
 summary: libart-paperback PDF library for C++
 license: BSD-4-Clause
