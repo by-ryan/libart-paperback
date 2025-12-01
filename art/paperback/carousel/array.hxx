@@ -17,7 +17,7 @@ namespace Art::Paperback::Carousel
     ///
     using iterator = typename deque<Object>::iterator;
 
-    /// Immutbale iterator type.
+    /// Immutable iterator type.
     ///
     using const_iterator = typename deque<Object>::const_iterator;
 
