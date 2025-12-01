@@ -14,7 +14,7 @@ libart-paperback is a PDF library for C++.
 
 ## Feature Requests
 
-Feature requests can be sent to ryan@helloryan.se.
+Feature requests can be sent to art@helloryan.se.
 
 ## Build System
 
