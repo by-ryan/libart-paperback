@@ -1,0 +1,43 @@
+name: publisb-docs-nightly
+
+on:
+  schedule:
+    - cron: '0 5 * * *'
+
+jobs:
+  build-and-publish:
+    if: github.repository == 'art/libart-paperback'
+    runs-on: linux
+    container: code.helloryan.se/art/infra/buildenv/x86_64-fedora_42-unified:latest
+    volumes:
+      - /source
+      - /build
+    steps:
+      - name: Create directories
+        run: |
+          mkdir -p /source /build
+      - name: Configure repository access
+        run: |
+          git config --global http.$GITHUB_SERVER_URL/.extraheader "Authorization: token ${{ secrets.ACT_RUNNER_TOKEN }}"
+      - name: Configure build directory
+        run: |
+          bpkg create -d /build cc config.cxx=clang++ config.cc.coptions="-Wall -Werror -Wno-unknown-pragmas -Wno-overloaded-virtual"
+      - name: Clone source package
+        run: |
+          cd /source
+          git clone $GITHUB_SERVER_URL/$GITHUB_REPOSITORY.git .
+          git checkout $GITHUB_SHA
+      - name: Initialize package
+        run: |
+          bdep init -A /build -d /source
+      - name: Build documentation
+        run: |
+          cd /source
+          b alias{docs-private}
+      - name: Configure MinIO CLI
+        run: |
+          mc alias set garage https://buckets.helloryan.se/ ${{ secrets.DOCS_BUCKET_ACCESS_KEY }} ${{ secrets.DOCS_BUCKET_SECRET_KEY }}
+      - name: Publish documentation
+        run: |
+          cd /build/libart-paperback/docs/html
+          mc cp -r * garage/docs.helloryan.se/libart-paperback/
