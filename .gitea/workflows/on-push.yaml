@@ -9,6 +9,7 @@ on:
 
 jobs:
   build-and-test:
+    if: github.repository == 'art/libart-paperback'
     runs-on: linux
     container: code.helloryan.se/art/infra/buildenv/x86_64-fedora_42-unified:latest
     volumes:
