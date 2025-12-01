@@ -6,6 +6,7 @@
 [![Sponsor][sponsor-badge]](https://patreon.com/helloryan)
 [![Language][language-badge]](https://en.wikipedia.org/wiki/C++)
 [![Build System][build2-badge]](https://build2.org/)
+[![Made with Love][made-with-love-badge]](https://helloryan.se/)
 
 # libart-paperback
 
@@ -64,3 +65,4 @@ Pull requests on GitHub will definitely be ignored.
 [sponsor-badge]: https://img.shields.io/badge/Sponsor-Patreon-green
 [language-badge]: https://img.shields.io/badge/Language-C++-blue
 [build2-badge]: https://img.shields.io/badge/Powered_by-build2-red
+[made-with-love-badge]: https://img.shields.io/badge/Made_with_%E2%9D%A4%EF%B8%8F_by-RYAN-red
