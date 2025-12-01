@@ -1,5 +1,7 @@
 \page readme README
 
+[![Build Status][build-badge]](https://code.helloryan.se/art/libart-paperback/actions)
+
 # libart-paperback
 
 libart-paperback is a PDF library for C++.
@@ -47,3 +49,5 @@ public documentation, i.e. `$out_root$/docs`.
 ## GitHub Pull Requests
 
 Pull requests on GitHub will definitely be ignored.
+
+[build-badge]: https://code.helloryan.se/art/libart-paperback/actions/workflows/on-push.yaml/badge.svg
