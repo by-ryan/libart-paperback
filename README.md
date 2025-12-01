@@ -7,6 +7,7 @@
 [![Language][language-badge]](https://en.wikipedia.org/wiki/C++)
 [![Build System][build2-badge]](https://build2.org/)
 [![Made with Love][made-with-love-badge]](https://helloryan.se/)
+[![Discord][discord-badge]](https://discord.gg/dCFMwrbNSP)
 
 # libart-paperback
 
@@ -14,7 +15,8 @@ libart-paperback is a PDF library for C++.
 
 ## Feature Requests
 
-Feature requests can be sent to art@helloryan.se.
+Feature requests can be sent to art@helloryan.se or you can join the
+Art Discord and have a chat: https://discord.gg/dCFMwrbNSP.
 
 ## Build System
 
@@ -66,3 +68,4 @@ Pull requests on GitHub will definitely be ignored.
 [language-badge]: https://img.shields.io/badge/Language-C++-blue
 [build2-badge]: https://img.shields.io/badge/Powered_by-build2-red
 [made-with-love-badge]: https://img.shields.io/badge/Made_with_%E2%9D%A4%EF%B8%8F_by-RYAN-red
+[discord-badge]: https://img.shields.io/discord/1444936129718522024?label=Discord&color=blue
